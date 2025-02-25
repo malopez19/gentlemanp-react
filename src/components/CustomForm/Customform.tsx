@@ -13,13 +13,16 @@ const Customform = () => {
   };
 
   return(
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <CustomInput name="name" control={control} label="name" type="text" error={errors.name}/>
-      <CustomInput name="email" control={control} label="email" type="email" error={errors.email}/>
-      <CustomInput name="password" control={control} label="password" type="password" error={errors.password}/>
-      <CustomInput name="confirmPassword" control={control} label="confirm password" type="password" error={errors.confirmPassword}/>
-      <button type="submit">Submit</button>
-    </form>
+    <>
+      <h1>Custom Form</h1>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <CustomInput name="name" control={control} label="name" type="text" error={errors.name}/>
+        <CustomInput name="email" control={control} label="email" type="email" error={errors.email}/>
+        <CustomInput name="password" control={control} label="password" type="password" error={errors.password}/>
+        <CustomInput name="confirmPassword" control={control} label="confirm password" type="password" error={errors.confirmPassword}/>
+        <button type="submit">Submit</button>
+      </form>
+    </>
   ) 
 }
 

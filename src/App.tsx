@@ -3,6 +3,7 @@ import "./App.css";
 import Button, { ColorRed } from "./components/Button/Button";
 import Customform from "./components/CustomForm/Customform";
 import { GlobalProvider } from "./context/global.provider";
+import { BookReader } from "./components/ref/BookReader";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -22,6 +23,10 @@ function App() {
 			<br></br>
 			<br></br>
 			<Customform />
+
+			<br></br>
+			<br></br>
+			<BookReader />
 		</GlobalProvider>
 	);
 }
